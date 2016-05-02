@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class SanwichTest < ActiveSupport::TestCase
+class SandwichIngredientTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end

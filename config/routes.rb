@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :sandwiches
   resources(:ingredients, except: [:new, :edit])
   
   resources(:sandwiches, except:[:new, :edit])
