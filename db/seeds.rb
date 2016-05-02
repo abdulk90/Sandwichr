@@ -1,10 +1,20 @@
-Sandwich.create(name: "Gargantuan", bread_type: "wheat")
-Sandwich.create(name: "Hero", bread_type: "honey oat")
-Sandwich.create(name: "BeachClub", bread_type: "white")
+san1 = Sandwich.create(name: "Gargantuan", bread_type: "wheat")
+san2 = Sandwich.create(name: "Hero", bread_type: "honey oat")
+san3 = Sandwich.create(name: "BeachClub", bread_type: "white")
 
-Ingredient.create(name: "Lettuce", calories: 10)
-Ingredient.create(name: "cheese", calories: 50)
-Ingredient.create(name: "turkey", calories: 50)
+in1 = Ingredient.create(name: "Lettuce", calories: 10)
+in2 = Ingredient.create(name: "cheese", calories: 50)
+in3 = Ingredient.create(name: "turkey", calories: 50)
+
+san1.ingredients.push(in1)
+san1.ingredients.push(in2)
+san1.ingredients.push(in3)
+
+san2.ingredients.push(in2)
+san2.ingredients.push(in3)
+
+san3.ingredients.push(in1)
+san3.ingredients.push(in3)
 
 
 

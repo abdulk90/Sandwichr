@@ -11,12 +11,14 @@ class SandwichesController < ApplicationController
 
 	def show
 		sandwich = Sandwich.find_by(id: params[:id])
+		ingredients = sandwich.ingredients
 		unless sandwich
 			render json: {error: "Sandwich not found"}, status: 404
 			#using return here will prevent any further actions and return OUT of the show
 		return
 		end
-		render json: sandwich
+
+		render json: {sandwich:sandwich , ingredients:ingredients }
 	end
 
 	def update
@@ -34,7 +36,7 @@ class SandwichesController < ApplicationController
 	def destroy
 		sandwich = Sandwich.find_by(id: params[:id])
 		unless sandwich
-			render json {error: "Sandwich not found"}, status: 404
+			render json: {error: "Sandwich not found"}, status: 404
 		return
 		end	
 
