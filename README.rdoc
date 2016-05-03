@@ -1,5 +1,8 @@
 == README
 
+This is a Sandwich creator and Ingredient adder!
+via postman, you can add sandwiches and ingredientes to the API.
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
